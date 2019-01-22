@@ -1,9 +1,12 @@
 #include <iostream>
 #include <VendingMachine.h>
+#include <EMoneyCounter.h>
 
 using namespace std;
 
-VendingMachine vending;
+
+EMoneyCounter emoneyCounter;
+VendingMachine vending(&emoneyCounter);
 
 int main()
 {

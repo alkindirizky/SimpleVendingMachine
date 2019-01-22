@@ -37,6 +37,7 @@
 		</Compiler>
 		<Unit filename="include/ChangeDispenser.h" />
 		<Unit filename="include/CoinCounter.h" />
+		<Unit filename="include/EMoneyCounter.h" />
 		<Unit filename="include/ItemDispenser.h" />
 		<Unit filename="include/ItemInfoLUT.h" />
 		<Unit filename="include/MenuInterface.h" />
@@ -44,6 +45,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ChangeDispenser.cpp" />
 		<Unit filename="src/CoinCounter.cpp" />
+		<Unit filename="src/EMoneyCounter.cpp" />
 		<Unit filename="src/ItemDispenser.cpp" />
 		<Unit filename="src/ItemInfoLUT.cpp" />
 		<Unit filename="src/MenuInterface.cpp" />

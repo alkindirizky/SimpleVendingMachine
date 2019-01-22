@@ -1,9 +1,10 @@
 #include "VendingMachine.h"
 #include <iostream>
 
-VendingMachine::VendingMachine()
+VendingMachine::VendingMachine(IMoneyInput* pMoneyInput)
 {
     m_state = STATE_IDLE;
+    m_pMoneyCounter = pMoneyInput;
 }
 
 void VendingMachine::execute()
@@ -18,13 +19,13 @@ void VendingMachine::execute()
     case STATE_INPUT_SESSION:
         std::cout<<""<<std::endl;
         std::cout<<"-----------------"<<std::endl;
-        std::cout<<"Total Money : Rp."<<m_coinCounter.countMoney()<<std::endl;
+        std::cout<<"Total Money : Rp."<<m_pMoneyCounter->countMoney()<<std::endl;
         std::cout<<"Total Cost : Rp."<<m_itemDispen.getTotalCost()<<std::endl;
         m_state = mapSessionCmdToState(m_menuInterface.waitCommand());
         break;
 
     case STATE_INSERT_MONEY:
-        m_coinCounter.waitMoneyInput();
+        m_pMoneyCounter->waitMoneyInput();
         m_state = STATE_INPUT_SESSION;
         break;
 
@@ -49,7 +50,7 @@ void VendingMachine::execute()
 
 
     case STATE_PROCESS_PAYMENT:
-        if(m_coinCounter.countMoney() < m_itemDispen.getTotalCost())
+        if(m_pMoneyCounter->countMoney() < m_itemDispen.getTotalCost())
         {
             std::cout<<"Insufficient Money, Please Input More Money"<<std::endl;
             m_state = STATE_INPUT_SESSION;
@@ -62,7 +63,7 @@ void VendingMachine::execute()
 
     case STATE_DISPENSE_ITEM:
         m_itemDispen.dispense();
-        if(m_coinCounter.countMoney() > m_itemDispen.getTotalCost())
+        if(m_pMoneyCounter->countMoney() > m_itemDispen.getTotalCost())
         {
             m_state = STATE_DISPENSE_CHANGE;
         }
@@ -78,10 +79,10 @@ void VendingMachine::execute()
         break;
 
     case STATE_DISPENSE_CHANGE:
-        m_coinCounter.substractMoney(m_itemDispen.getTotalCost());
-        m_changeDispen.dispense(m_coinCounter.countMoney());
+        m_pMoneyCounter->substractMoney(m_itemDispen.getTotalCost());
+        m_changeDispen.dispense(m_pMoneyCounter->countMoney());
         m_itemDispen.clearQueue();
-        m_coinCounter.reset();
+        m_pMoneyCounter->reset();
         m_state = STATE_IDLE;
         break;
     }

@@ -1,13 +1,13 @@
-#ifndef COINCOUNTER_H
-#define COINCOUNTER_H
+#ifndef EMONEYCOUNTER_H
+#define EMONEYCOUNTER_H
 
 #include <stdint.h>
 #include <IMoneyInput.h>
 
-class CoinCounter : public IMoneyInput
+class EMoneyCounter : public IMoneyInput
 {
     public:
-        CoinCounter();
+        EMoneyCounter();
 
         /*Blocking wait user inputting coins (discrete options)*/
         void waitMoneyInput();

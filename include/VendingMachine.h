@@ -1,7 +1,7 @@
 #ifndef VENDINGMACHINE_H
 #define VENDINGMACHINE_H
 
-#include <CoinCounter.h>
+#include <IMoneyInput.h>
 #include <ItemDispenser.h>
 #include <MenuInterface.h>
 #include <ChangeDispenser.h>
@@ -9,7 +9,7 @@
 class VendingMachine
 {
     public:
-        VendingMachine();
+        VendingMachine(IMoneyInput* pMoneyInput);
         void execute();
 
     private:
@@ -30,7 +30,7 @@ class VendingMachine
         ExecState mapSessionCmdToState(MenuInterface::CommandType cmd);
 
         ExecState m_state;
-        CoinCounter m_coinCounter;
+        IMoneyInput* m_pMoneyCounter;
         ItemDispenser m_itemDispen;
         MenuInterface m_menuInterface;
         ChangeDispenser m_changeDispen;

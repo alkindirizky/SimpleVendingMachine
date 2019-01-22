@@ -1,0 +1,149 @@
+# depslib dependency file v1.0
+1548129410 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\main.cpp
+	<iostream>
+	<VendingMachine.h>
+
+1548131725 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\include\coincounter.h
+	<stdint.h>
+
+1548128781 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\src\changedispenser.cpp
+	<ChangeDispenser.h>
+	<iostream>
+
+1548128741 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\include\changedispenser.h
+	<stdint.h>
+
+1548131828 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\src\itemdispenser.cpp
+	"ItemDispenser.h"
+	<iostream>
+	<ItemInfoLUT.h>
+	<string.h>
+
+1548131548 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\include\itemdispenser.h
+	<string>
+	<stdint.h>
+	<ItemInfoLUT.h>
+
+1548052235 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\src\usermenuinterface.cpp
+	"UserMenuInterface.h"
+
+1548052235 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\include\usermenuinterface.h
+
+1548128806 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\src\coincounter.cpp
+	"CoinCounter.h"
+	<iostream>
+	<string>
+
+1548055744 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\\include\coincounter.h
+	<stdint.h>
+
+1548057833 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\src\itemselector.cpp
+	"ItemSelector.h"
+
+1548057833 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\include\itemselector.h
+
+1548128620 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\include\iteminfolut.h
+	<stdint.h>
+	<string>
+
+1548128601 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\src\iteminfolut.cpp
+	"ItemInfoLUT.h"
+
+1548131616 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\src\menuinterface.cpp
+	"MenuInterface.h"
+	"ItemInfoLUT.h"
+	<iostream>
+
+1548131557 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\include\menuinterface.h
+	"ItemDispenser.h"
+
+1548130590 c:\users\bukalapak\desktop\tutorial\simplevendingmachine\include\vendingmachine.h
+	<CoinCounter.h>
+	<ItemDispenser.h>
+	<MenuInterface.h>
+	<ChangeDispenser.h>
+
+1548131985 source:c:\users\bukalapak\desktop\tutorial\simplevendingmachine\src\vendingmachine.cpp
+	"VendingMachine.h"
+	<iostream>
+
+1548129410 source:c:\users\bukalapak\desktop\simplevendingmachine\main.cpp
+	<iostream>
+	<VendingMachine.h>
+
+1548130590 c:\users\bukalapak\desktop\simplevendingmachine\include\vendingmachine.h
+	<CoinCounter.h>
+	<ItemDispenser.h>
+	<MenuInterface.h>
+	<ChangeDispenser.h>
+
+1548131548 c:\users\bukalapak\desktop\simplevendingmachine\include\itemdispenser.h
+	<string>
+	<stdint.h>
+	<ItemInfoLUT.h>
+
+1548128620 c:\users\bukalapak\desktop\simplevendingmachine\include\iteminfolut.h
+	<stdint.h>
+	<string>
+
+1548131557 c:\users\bukalapak\desktop\simplevendingmachine\include\menuinterface.h
+	"ItemDispenser.h"
+
+1548128741 c:\users\bukalapak\desktop\simplevendingmachine\include\changedispenser.h
+	<stdint.h>
+
+1548128781 source:c:\users\bukalapak\desktop\simplevendingmachine\src\changedispenser.cpp
+	<ChangeDispenser.h>
+	<iostream>
+
+1548131828 source:c:\users\bukalapak\desktop\simplevendingmachine\src\itemdispenser.cpp
+	"ItemDispenser.h"
+	<iostream>
+	<ItemInfoLUT.h>
+	<string.h>
+
+1548128601 source:c:\users\bukalapak\desktop\simplevendingmachine\src\iteminfolut.cpp
+	"ItemInfoLUT.h"
+
+1548132030 source:c:\users\bukalapak\desktop\simplevendingmachine\src\menuinterface.cpp
+	"MenuInterface.h"
+	"ItemInfoLUT.h"
+	<iostream>
+
+1548131985 source:c:\users\bukalapak\desktop\simplevendingmachine\src\vendingmachine.cpp
+	"VendingMachine.h"
+	<iostream>
+
+1548128781 source:c:\users\bukalapak\desktop\vendingmachine\src\changedispenser.cpp
+	<ChangeDispenser.h>
+	<iostream>
+
+1548128741 c:\users\bukalapak\desktop\vendingmachine\include\changedispenser.h
+	<stdint.h>
+
+1548131828 source:c:\users\bukalapak\desktop\vendingmachine\src\itemdispenser.cpp
+	"ItemDispenser.h"
+	<iostream>
+	<ItemInfoLUT.h>
+	<string.h>
+
+1548131548 c:\users\bukalapak\desktop\vendingmachine\include\itemdispenser.h
+	<string>
+	<stdint.h>
+	<ItemInfoLUT.h>
+
+1548128620 c:\users\bukalapak\desktop\vendingmachine\include\iteminfolut.h
+	<stdint.h>
+	<string>
+
+1548128601 source:c:\users\bukalapak\desktop\vendingmachine\src\iteminfolut.cpp
+	"ItemInfoLUT.h"
+
+1548132030 source:c:\users\bukalapak\desktop\vendingmachine\src\menuinterface.cpp
+	"MenuInterface.h"
+	"ItemInfoLUT.h"
+	<iostream>
+
+1548131557 c:\users\bukalapak\desktop\vendingmachine\include\menuinterface.h
+	"ItemDispenser.h"
+
